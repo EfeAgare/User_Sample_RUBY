@@ -30,6 +30,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_template 'users/show'
     assert_equal "Welcome to the Sample App!", flash[:success]
+
+    assert is_logged_in?
   end
 
 end
