@@ -3,7 +3,7 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(name: 'efeknowledge', email: 'example@gmail.com')
+    @user = User.new(name: 'efeknowledge', email: 'example@gmail.com', password: '2023efe', password_confirmation: '2023efe' )
   end
 
   
@@ -50,5 +50,5 @@ class UserTest < ActiveSupport::TestCase
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
   end
-  
+
 end
