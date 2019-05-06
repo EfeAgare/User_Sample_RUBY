@@ -65,3 +65,8 @@ gem "pg", "~> 1.1"
 gem 'bootstrap-sass', '~>3.4.1'
 gem 'rails-controller-testing'
 gem 'jquery-rails'
+gem "faker", "~> 1.9"
+
+
+gem "will_paginate", "~> 3.1"
+gem "bootstrap-will_paginate", "~> 1.0"
