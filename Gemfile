@@ -58,6 +58,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+
+group :production do
+  gem "fog", "~> 2.1"
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -70,3 +74,6 @@ gem "faker", "~> 1.9"
 
 gem "will_paginate", "~> 3.1"
 gem "bootstrap-will_paginate", "~> 1.0"
+
+gem "carrierwave", "~> 1.3"
+gem "mini_magick", "~> 4.9"
