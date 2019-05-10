@@ -11,6 +11,9 @@ module SampleApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
+
     config.generators do |g|
       g.orm :active_record, primary_key_type: :uuid
     end
